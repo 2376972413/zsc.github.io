@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.css" />
+		<script type="text/javascript">
+			$(function(){
+			$('[data-toggle="tooltip"]').tooltip();
+			$('.zyhm').hide();
+			$('.zpass').hide();
+			});
+			function aaaa(){
+			var cc=	$('#yhm').val();
+			if(cc.length<=0){
+				$('.zyhm').show()
+				
+			}else if(cc.length>0){
+				$('.zyhm').hide()
+			}
+			
+			}
+			function bbbb(){
+			if($('.zyhm').show()){
+				$('.zyhm').hide()
+				
+			}
+			
+			}
+			function cccc(){
+				var cc=	$('#pass').val();
+			if(cc==""){
+				$('.zpass').show()
+				
+			}else{
+				$('.zpass').hide()
+			}
+			}
+			function dddd(){
+				$('.zpass').hide()
+				
+			}
+			var n=1;
+			var t;
+			function asa(){
+				t=setInterval(aa,100);
+			}
+			function aa(){
+				if(n<=100){
+					$('#jdt').css('width',n+"%").text(n+'%')
+				n++;
+				}
+				else{
+					clearInterval(t);
+				}
+			}
+			
+		</script>
+		<style type="text/css">
+			.carousel {
+				height: 800px;
+				background-color: #000;
+			}
+			
+			.carousel .item {
+				height: 800px;
+				background-color: #000;
+			}
+			
+			.carousel img {
+				width: 100%;
+			}
+			
+			.casousel-caption p {
+				margin-bottom: 20px;
+				font-size: 20px;
+				line-height: 1.8;
+			}
+			
+			ul>li {
+				margin-left: 20px;
+			}
+	
+			 .xx{
+			 font-size: 50px;
+			 color:#2a6496;
+			 margin-top: 20px;
+			 } 
+
+		.a a{
+	    margin: 0 50px;
+		text-decoration: none;
+		line-height: 80px;
+		font-size: 20px;
+	}
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+		</style>
+	</head>
+
+	<body>
+		<!--导航条-->
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target="#dw">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+					<a href="#" class="navbar-brand btn btn-lg">疯狂动物城</a>
+				</div>
+				<div class="collapse navbar-collapse" id="dw">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#" class="btn btn-lg">首页</a>
+						</li>
+						<li>
+							<a href="#" class="btn btn-lg">简述</a>
+						</li>
+						<li>
+							<a class="btn btn-lg dropdown-toggle" data-toggle="dropdown">人物
+								<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-header">疯狂动物城-人物</li>
+								<li>
+									<a href="#">朱迪·霍普斯/Judy Hopps（棉尾兔）</a>
+								</li>
+								<li>
+									<a href="#">尼克·王尔德/Nick Wilde（赤狐）</a>
+								</li>
+								<li>
+									<a href="#">博戈局长/Chief Bogo（非洲水牛）</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">本杰明警官/Benjamin Clawhauser（猎豹） </a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="btn btn-lg"data-toggle="modal"data-target="#gy">关于</a>
+						</li>
+					</ul>
+					<button class="btn navbar-btn btn-success navbar-right " data-toggle="modal"data-target="#dl">登录</button>
+					<button class="btn navbar-btn btn-danger navbar-right" data-toggle="modal"data-target="#zc">注册</button>
+					<form action="#"class="navbar-form navbar-right">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="请输入你想了解的内容"/>
+							<span class="input-group-btn"><button class="btn btn-default">搜索</button></span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<!--轮播图-->
+		<div id="dwc" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#dwc" data-slide-to="0" class="active"></li>
+				<li data-target="#dwc" data-slide-to="1"></li>
+				<li data-target="#dwc" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="img/3e0aa7e7e12be0a263437dbfa3b6aa6b.jpeg" />
+					<div class="carousel-caption">
+						<h1>疯狂动物城</h1>
+						<p>来扩大感受到的女生看房名卡位的访问怒法师开门了国家发生的两个号</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/2.jpeg" />
+					<div class="carousel-caption">
+						<h1>疯狂动物城</h1>
+						<p>来扩大感受到的女生看房名卡位的访问怒法师开门了国家发生的两个号</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/3.jpeg" alt="...">
+					<div class="carousel-caption">
+						<h1>疯狂动物城</h1>
+						<p>来扩大感受到的女生看房名卡位的访问怒法师开门了国家发生的两个号</p>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#dwc" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#dwc" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+		<br />
+		
+		<!--标签页-->
+		<div class="container-fluid">
+			<div class="bq">
+			<ul  class="nav nav-tabs">
+				<li class="active"><a href="#aa1" data-toggle="tab">动物1</a></li>
+				<li><a href="#aa2" data-toggle="tab">动物2</a></li>
+				<li><a href="#aa3" data-toggle="tab">动物3</a></li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active"id="aa1">
+					<div class="row">
+						<div class="col-md-5 col-md-offset-2">
+							<h2 class="xx">Animal1 <span class="text-muted">1.疯狂动物城</span></h2>
+						<p class="lead">成他觉中她我她如天于水到还西子中件比过第有<br />一 我绝不向好立家里信赖好人把其发打眼立家尝试了
+						<br />二 既中她她如天全是还西时眼下的人小到发打为我们狐狸狡猾不值得信赖 成他开没成到比过第必他那向好人把其发打眼立家尝试了 
+						</p>
+						</div>
+						<div class="col-md-5">
+							<img src="img/gif2.gif"/>
+						</div>
+					</div>
+					
+				</div>
+				<div class="tab-pane"id="aa2">
+					<div class="row">
+						<div class="col-md-5 col-md-offset-2">
+							<h2 class="xx">Animal1 <span class="text-muted">2.疯狂动物城</span></h2>
+						<p class="lead">成他觉中她我她如天于水到还西子中件比过第有<br />一 我绝不向好立家里信赖好人把其发打眼立家尝试了
+						<br />二 既中她她如天全是还西时眼下的人小到发打为我们狐狸狡猾不值得信赖 成他开没成到比过第必他那向好人把其发打眼立家尝试了 
+						</p>
+						</div>
+						<div class="col-md-5">
+							<img src="img/c4fa167026f9db481fb3eaad7e2bbbd7.gif"width="389px" height="229px"/>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane"id="aa3">
+					<div class="row">
+						<div class="col-md-5 col-md-offset-2">
+							<h2 class="xx">Animal1 <span class="text-muted">3.疯狂动物城</span></h2>
+						<p class="lead">成他觉中她我她如天于水到还西子中件比过第有<br />一 我绝不向好立家里信赖好人把其发打眼立家尝试了
+						<br />二 既中她她如天全是还西时眼下的人小到发打为我们狐狸狡猾不值得信赖 成他开没成到比过第必他那向好人把其发打眼立家尝试了 
+						</p>
+						</div>
+						<div class="col-md-5">
+							<img src="img/e1e7cb04ee67ea57ab75dfd6246ae904.gif"width="389px" height="229px"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<hr />
+		<div class="container">
+		<!--面板-->
+			<div class="row">
+				<div class="col-md-4">
+					<div class="panel">
+						<div class="panel-heading">
+							<img src="img/11.jpeg" width="280px" height="270px" />
+						</div>
+						<div class="panel-body">
+							<h2>animal1</h2>
+							<p>林卡酒店刚说风寒看到个后面发的搜房大机构老夫</p>
+							<p>
+								<a href="#" class="btn btn-success">了解一下</a>&nbsp;&nbsp;
+								<a href="#" class="btn btn-warning">敬请期待</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="panel">
+						<div class="panel-heading">
+							<img src="img/89a38b5c5d55a009d810ba111572fe17.gif" width="280px" height="270px" />
+						</div>
+						<div class="panel-body">
+							<h2>animal2</h2>
+							<p>林卡酒店刚说风寒看到个后面发的搜房大机构老夫</p>
+							<p>
+								<a href="#" class="btn btn-success">了解一下</a>&nbsp;&nbsp;
+								<a href="#" class="btn btn-warning">敬请期待</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="panel">
+						<div class="panel-heading">
+							<img src="img/11.jpeg" width="280px" height="270px" />
+						</div>
+						<div class="panel-body">
+							<h2>animal3</h2>
+							<p>林卡酒店刚说风寒看到个后面发的搜房大机构老夫</p>
+							<p>
+								<a href="#" class="btn btn-success">了解一下</a>&nbsp;&nbsp;
+								<a href="#" class="btn btn-warning">敬请期待</a>
+							</p>
+						</div>
+					</div>
+				</div>
+	</div>
+		<!--模态框-->
+		<div class="modal fade" id="gy">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+						<div class="modal-title">
+							<button class="close" data-dismiss="modal"><span>&times;</span></button>
+							<h2>关于</h2>
+						</div>
+						<div class="modal-body">
+							<p>《疯狂动物城》由迪士尼影业出品的3D动画片，由里奇·摩尔、拜恩·霍华德及杰拉德·布什联合执导，
+							金妮弗·古德温、杰森·贝特曼、夏奇拉、艾伦·图代克、伊德瑞斯·艾尔巴、J·K·西蒙斯等加盟配音[1] 。
+							</p>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-info" data-dismiss="modal">知道了</button>
+						</div>
+					</div>
+					</div>
+				</div>
+				</div>
+			<!--登录-->
+			<div class="modal fade" id="dl">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+						<div class="modal-title">
+							<button class="close" data-dismiss="modal"><span>&times;</span></button>
+							<h2>登录</h2>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<h1 class="text-center">疯狂动物城</h1>
+									<hr />
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<img src="img/c50bd4aa240ad24b069e3823ad0d1f6f.gif"width="400px"height="300px"/>
+								</div>
+								<div class="col-md-6">
+									
+									<div class="form-group form-inline text-center">
+										<label for="yhm">请输入用户名:</label>
+										<input type="text" class="form-control" id="yhm"/>
+
+									</div>
+									<div class="form-group form-inline text-center	">
+										<label for="pass">请输入密码:</label>&nbsp;&nbsp;&nbsp;
+										<input type="password" class="form-control" id="pass"/>
+									<span></span>
+									</div>
+									<div class="progress">
+										<div class="progress-bar  progress-bar-striped "id="jdt" style="width: 0%; ">0%</div>
+									</div>
+									<button class="btn btn-success "onclick="asa()">开始</button>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-info" >登录</button>
+							<button class="btn btn-info" data-dismiss="modal">取消</button>
+						</div>
+					</div>
+					</div>
+				</div>
+				</div>
+				<!--注册-->
+				<div class="modal fade" id="zc">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+						<div class="modal-title">
+							<button class="close" data-misdiss="modal"><span>&times;</span></button>
+							<h2>注册</h2>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-6">
+									<img src="img/ead6d2ac18d53d7fe594e0d5b9002f3e.gif"width="400px"height="300px"/>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="yhm">请输入用户名</label>
+										<input type="text" class="form-control" id="yhm" onblur="aaaa()" onfocus="bbbb()"/>
+										<span class="help-block zyhm" style="color: red;">请输入用户名*</span>
+										<label for="pass">请输入密码</label>
+										<input type="password" class="form-control" id="pass" onfocus="dddd()" onblur="cccc()"/>
+										<span class="help-block zpass" style="color: red;">请输入密码*</span>
+										<label for="ispass">请再次输入密码</label>
+										<input type="password" class="form-control" id="ispass"/>
+										<label for="">性别:</label>
+										<div class="input-group">
+											<input type="radio" name="sex" id="" checked="checked" value="" />男
+										<input type="radio" name="sex" id="" value="" />女</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-warning">注册</button>
+							<button class="btn btn-info" data-dismiss="modal">取消</button>
+						</div>
+					</div>
+					</div>
+				</div>
+				</div>
+			<hr />
+			<!--工具提示-->
+		<div class="row ">
+			<div class="col-md-4"data-toggle="tooltip" data-placement="left" title="任何人都可以成就任何事">
+				<img src="img/3d1e9645761af84db86150c9f4712a9c.gif" width="100%" height="300px"/>
+			</div>
+			<div class="col-md-4"data-toggle="tooltip" data-placement="top" title="准备好把世界变得更美好了吗！">
+				<img src="img/5f6a6dcbe13b08cedd86ecfd9bc31562.gif" width="100%" height="300px"/>
+			</div>
+			<div class="col-md-4"data-toggle="tooltip" data-placement="right" title="我们唯一要害怕的就是害怕本身">
+				<img src="img/f722158ca5d6551b226dc1a1afd6c6bc.gif" width="100%" height="300px"/>
+			</div>
+		</div>
+		
+		</div>
+		<hr />
+		<div class="container-fluid">
+					<div class="row a" style="height: 230px; background: #5E5E5E;">
+					<div class="col-md-12 text-center">
+						<h1>疯狂动物城</h1>
+						<a href="#">百度网|</a>
+						<a href="#">新浪网|</a>
+						<a href="#">新浪微博|</a>
+						<a href="#">爱奇艺|</a>
+						<a href="#">腾讯视频|</a>
+					</ul>
+					<p class="lead">©Copyright 2022 北大青鸟科技公司版权所有 | 北京ICP备123456号-8</p>
+					</div>
+				</div>
+		</div>
+		</body>
+</html>
